@@ -1,0 +1,54 @@
+
+create DATABASE salon;
+
+use salon;
+
+create table USER (
+	fname varchar(100),
+    lname varchar(100),
+    EMAIL varchar(100),
+    PASSWORD varchar(100)
+);
+create table hairstyle (
+id int ,
+type varchar(100),
+price int ,
+img varchar(100));
+
+create table haircolor (
+id int ,
+type varchar(100),
+price int ,
+img varchar(100));
+
+
+create table spa (
+id int ,
+type varchar(100),
+price int ,
+img varchar(100),
+des varchar(100) );
+
+
+use salon;
+TRUNCATE TABLE hairstyle;
+TRUNCATE TABLE haircolor;
+TRUNCATE TABLE spa;
+
+insert into hairstyle values (1,"army",250,"Angled_Bob");
+insert into hairstyle values (2,"aadad",200,"ayur");
+insert into hairstyle values (3,"aadadadadad",150,"back");
+insert into hairstyle values (4,"a",500,"bg");
+insert into hairstyle values (5,"ar",205,"boot");
+
+insert into haircolor values (1,"black",250,"c.jpg");
+insert into haircolor values (2,"white",200,"ch.jpg");
+insert into haircolor values (3,"red",150,"che.jpg");
+insert into haircolor values (4,"blue",500,"french_bob.jpg");
+insert into haircolor values (5,"green",205,"fullstreak.jpg");
+
+insert into spa values (1,"black",250,"afaf","h.jpg");
+insert into spa values (2,"white",200,"afa","health.jpg");
+insert into spa values (3,"red",150,"af","j.jpg");
+insert into spa values (4,"blue",500,"aadad","sp.jpg");
+insert into spa values (5,"green",205,"adadada","top.jpg");
